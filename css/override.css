@@ -1,0 +1,46 @@
+/* overrides.css */
+
+/* ظلّ أساسي أقوى للكروت */
+.card,
+.card-sec3,
+.card-5,
+.card-parent-5 .card-5 {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+  border-radius: 10px;
+  transition: all 0.3s ease !important;
+}
+
+/* ظلّ عند التمرير أعمق وأوسع مع رفع البطاقة */
+.card:hover,
+.card-sec3:hover,
+.card-5:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.281) !important;
+  /* transform: translateY(-8px) !important; */
+}
+
+/* === إضافة ظلّ لـ .content-card5 === */
+/* الظلّ الأساسي لكل عناصر المحتوى داخل الكارد */
+.content-card,
+.content-card-sec2,
+/* إن وُجد */
+.content-card-sec3,
+.content-card5,
+.content-card-6 {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+  border-radius: 10px;
+  transition: all 0.3s ease !important;
+  background: #fff;
+  /* ضمان الخلفية البيضاء */
+  position: relative;
+  z-index: 2;
+}
+
+/* تأثير الظلّ عند المرور على أي من هذه العناصر */
+.content-card:hover,
+.content-card-sec2:hover,
+.content-card-sec3:hover,
+.content-card5:hover,
+.content-card-6:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2) !important;
+  /* transform: translateY(-8px) !important; */
+}
